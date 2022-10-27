@@ -9,10 +9,23 @@ ob_start();
         <?= get_template_part('template-parts/navigation'); ?>
     </div>
     <div class="panels-column">
-        <h1>This is the panel</h1>
+        <div class="portal-panel-container" id="i-app">
+            
+        </div>
     </div>
-
 </div>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script>
+    const { createApp } = Vue
+
+    createApp({
+        data() {
+            return {
+                message: "Hello from Vue!!!!"
+            }
+        }
+    }).mount('#i-app')
+</script>
 
 
 

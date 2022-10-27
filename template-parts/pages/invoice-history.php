@@ -10,7 +10,7 @@ ob_start();
     </div>
     <div class="panels-column">
         <div class="portal-panel-container" id="i-app">
-            
+            {{ message }}
         </div>
     </div>
 </div>
